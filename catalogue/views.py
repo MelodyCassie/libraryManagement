@@ -137,7 +137,6 @@ class AuthorViewSet(ModelViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
     permission_classes = [IsAuthenticated]
-
     filter_backends = [SearchFilter, OrderingFilter]
     searchFields = ["firstname", "lastname"]
     ordering_fields = ["first_name"]
