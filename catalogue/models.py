@@ -76,3 +76,9 @@ class Review(models.Model):
     name = models.CharField(max_length=255)
     message = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
+
+
+class BookImage(models.Model):
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='book-image')
+    image = models.ImageField(upload_to='')
+

@@ -13,8 +13,10 @@ drf-nested-routers = "*"
 django-filter = "*"
 djoser = "*"
 djangorestframework-simplejwt = "*"
+pillow = "*"
 
 [dev-packages]
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.12"
